@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.content {
+  margin: auto;
+}
+.add-cart{
+  width: 135px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background: none;
+  overflow: hidden;
+}
+.button-default{
+  display: grid;
+  place-content: center;
+  position: absolute;
+  width: 135px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: lightskyblue;
+  font-size: 18px;
+  transition: all .4s ease;
+  white-space: nowrap;
+}
+.button-icon{
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width:0;
+  height: 100%;
+  z-index: 5;
+  background-color: lightgreen;
+  transform: rotateY(180deg);
+  transition: all .4s ease;
+}
+.button-icon span{
+  transform: translateX(-70px) rotate(-40deg);
+  color: white;
+  transition: all .4s linear;
+  color: darkgreen;
+}
